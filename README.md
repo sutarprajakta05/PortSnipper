@@ -25,21 +25,24 @@ It is designed for **learning, basic reconnaissance, and security testing** purp
 Check Python version:
 ```bash
 python3 --version
-
+```
 📦 Installation
 
 Clone the repository:
-
+```bash
 git clone https://github.com/sutarprajakta05/PortSnipper.git
 cd PortSnipper
-
+```
 ▶️ Usage
 
 Run the scanner:
+```bash
 python3 PortSnipper.py
+```
 Enter the target host when prompted:
+```bash
 Enter a remote host to scan: testphp.vulnweb.com
-
+```
 📌 Example Output
 ____________________________________________________________
 Please wait, scanning remote host 44.228.249.3
