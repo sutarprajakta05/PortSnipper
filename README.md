@@ -44,38 +44,39 @@ Enter the target host when prompted:
 Enter a remote host to scan: testphp.vulnweb.com
 ```
 📌 Example Output
-____________________________________________________________
+```
+___________________________________________________________
 Please wait, scanning remote host 44.228.249.3
 ____________________________________________________________
 Port 80:      Open
 Port 443:     Open
 Scanning Completed in:  0:00:08.342190
-
+```
 ⚙️ How It Works
 
-Resolves hostname to IP using socket.gethostbyname()
-Iterates through ports 1–5000
-Uses TCP connect scan (socket.connect_ex)
-Records total scan time using datetime
+- Resolves hostname to IP using socket.gethostbyname()
+- Iterates through ports 1–5000
+- Uses TCP connect scan (socket.connect_ex)
+- Records total scan time using datetime
 
 🧠 Limitations
 
-Single-threaded (slower than tools like Nmap)
-TCP connect scan only
-No service/version detection
+- Single-threaded (slower than tools like Nmap)
+- TCP connect scan only
+- No service/version detection
 
 📌 Future Improvements
 
-Multithreading for faster scans
-Custom port range support
-Service detection
-Output to file
-Banner grabbing
+- Multithreading for faster scans
+- Custom port range support
+- Service detection
+- Output to file
+- Banner grabbing
 
 ⚠️ Disclaimer
 
-This tool is intended for educational purposes only.
-The author is not responsible for misuse or illegal activities.
+- This tool is intended for educational purposes only.
+- The author is not responsible for misuse or illegal activities.
 
 👤 Author
 
